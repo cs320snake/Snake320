@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> Register in Webpage</title>
+    </head>
+    <body>
+        <h1>Please Register to the game</h1>
+        
+        {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+        {% endif %}
+        <form method="post" action="{% url 'users:register' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit">Register</button>
+        <input type="hidden" name="next" value="{% url 'football:home' %}" />
+        </form>
+    </body>
+</html>
