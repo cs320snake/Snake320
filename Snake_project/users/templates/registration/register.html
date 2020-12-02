@@ -12,7 +12,7 @@
         {% csrf_token %}
         {{ form.as_p }}
         <button name="submit">Register</button>
-        <input type="hidden" name="next" value="{% url 'football:home' %}" />
+        <input type="hidden" name="next" value="{% url 'game:home' %}" />
         </form>
     </body>
 </html>
