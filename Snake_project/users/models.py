@@ -3,5 +3,6 @@ from django.contrib.auth.models import User
 
 
 # Create your models here.
-
-userOwner = models.ForeignKey(User, on_delete = models.CASCADE)
+class Team(models.Model):
+    userOwner = models.ForeignKey(User, on_delete= models.CASCADE)
+ 

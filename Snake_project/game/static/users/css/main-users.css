@@ -1,0 +1,28 @@
+
+body {
+    margin:auto;
+    max-width: 500px;
+	padding:0px;
+    background-color: #02afff;
+    font-family: Verdana, arial, helvetica, sans-serif;
+}
+#mode-wrapper {
+    color: #ffffff;
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+}
+h1{
+    color: #ffffff;
+    margin-top: 50px;
+}
+p{}
+input{
+    border-radius: 18px;
+}
+button{
+    border-radius: 8px;
+}
+button:hover{
+    background: gray;
+    color: white;
+}
