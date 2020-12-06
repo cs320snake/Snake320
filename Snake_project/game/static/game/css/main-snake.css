@@ -3,7 +3,6 @@ body {
 	margin:0px;
 	padding:0px;
     background-color: #02afff;
-    display: flex;
 }
 
 #game-area {
@@ -66,10 +65,10 @@ a.snake-link:hover {
 }
 
 .snake-snakebody-alive {
-   background-image: url('./images/snakeblock.png');
+   background-image: url('../images/snakeblock.png');
 }
 .snake-snakebody-dead {
-   background-image: url('./images/deadblock.png');
+   background-image: url('../images/deadblock.png');
 }
 
 .snake-food-block {
@@ -78,7 +77,7 @@ a.snake-link:hover {
     background-color: #FF0000;
     border: 0px solid #000080;
     position: absolute;
-    background-image: url("./images/retro-food-block.png")
+    background-image: url("../images/retro-food-block.png")
 }
 
 .snake-playing-field {
