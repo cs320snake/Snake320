@@ -11,7 +11,12 @@
     <body>
         <h1>Snake Game</h1>
         {%if user.is_authenticated%}
-        <p>Hello, {{user.username}}</p>
+        <p>Hello, {{user.username}}  your score is {{ user.person.score }}.
+        Javascript for snake
+        {% else %}
+        <a href="{% url 'users:login' %}">Log in</a>
+        {% endif %}
+        </p>
 
     <style>
       .snake-toolbar {
