@@ -25,9 +25,3 @@ def register(request):
             return redirect('users:login')
     context = {'form':form, 'person_form':personForm}
     return render(request, 'registration/register.html',context)
-def teams(request): 
-    teamsList = Team.objects.filter(userOwner = request.user).order_by('id')
-    if forms.is_valid():
-        new_team = form.save(commit=False) #not stored by db yet
-        new_team.userOwner = request.user #add the user to FK
-        return redirect('game:teams')

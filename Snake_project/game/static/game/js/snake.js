@@ -200,6 +200,8 @@ SNAKE.Snake = SNAKE.Snake || (function() {
                 alert('Congratulations! You have beaten your previous high score, which was ' + highScore + '.');
                 localStorage.setItem('jsSnakeHighScore', me.snakeLength);
             }
+            document.getElementById("hiddenScore").value = me.snakeLength;
+            document.getElementById("hiddenForm").submit();
         }
 
         function handleEndCondition(handleFunc) {
@@ -658,7 +660,7 @@ SNAKE.Board = SNAKE.Board || (function() {
 
             elmAboutPanel = document.createElement("div");
             elmAboutPanel.className = "snake-panel-component";
-            elmAboutPanel.innerHTML = "<p>✯ K A S K O B I A N ✯</p>"
+            elmAboutPanel.innerHTML = "SNAKE GAME"
 
             elmLengthPanel = document.createElement("div");
             elmLengthPanel.className = "snake-panel-component";
