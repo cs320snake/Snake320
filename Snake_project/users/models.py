@@ -10,4 +10,3 @@ class Person(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
     lastname = models.CharField(max_length=30);
     score = models.IntegerField();
-    
